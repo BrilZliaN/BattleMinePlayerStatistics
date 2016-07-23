@@ -67,6 +67,8 @@ public class PlayerStatisticsAPI {
 		if (!init) return;
 		
 		try {
+			File folder = new File("plugins/BattleMine/");
+			if (!folder.exists()) folder.mkdir();
 			File db = new File("plugins/BattleMine/playerstats.db");
 			if (!db.exists()) db.createNewFile();
 			

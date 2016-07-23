@@ -46,13 +46,6 @@ public class PlayerListener implements Listener {
 		PlayerStatisticsAPI.setPlayerStat(event.getPlayer().getName(), stat);
 	}
 	
-	@EventHandler //TODO убрать, тестирование
-	public void onPlayerChat(AsyncPlayerChatEvent event) {
-		if (event.getMessage().startsWith("!stat")) {
-			event.getPlayer().sendMessage(PlayerStatisticsAPI.getPlayerStat(event.getPlayer().getName()).serialize());
-		}
-	}
-	
 	private boolean isDiamond(PlayerInventory inv) {
 		for (ItemStack is : inv.getArmorContents()) {
 			if (is.getType() != Material.DIAMOND_HELMET && is.getType() != Material.DIAMOND_CHESTPLATE 
