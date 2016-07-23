@@ -1,0 +1,7 @@
+name: BattleMinePlayerStatistics
+version: 1.0
+description: Плагин, отслеживающий активность пользователей
+authors: [BrilZliaN] 
+website: https://battlemine.ru
+
+main: ru.battlemine.playerstatistics.PSPlugin
